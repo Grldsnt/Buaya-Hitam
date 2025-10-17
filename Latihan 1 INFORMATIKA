@@ -1,0 +1,87 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPF6+rll47Al7dToA3gC4jn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Grldsnt/Buaya-Hitam/blob/main/Latihan%201%20INFORMATIKA\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import time\n",
+        "import sys\n",
+        "\n",
+        "def loading_animation():\n",
+        "    \"\"\"Displays a simple loading animation.\"\"\"\n",
+        "    animation = \"|/-\\\\\"\n",
+        "    for i in range(10):\n",
+        "        time.sleep(0.1)\n",
+        "        sys.stdout.write(\"\\r\" + animation[i % len(animation)] + \" Loading...\")\n",
+        "        sys.stdout.flush()\n",
+        "    sys.stdout.write(\"\\r\" + \" \" * 15 + \"\\r\") # Clear the loading animation line\n",
+        "\n",
+        "nama = \"Geraldo Imanuel Dwisanto\"\n",
+        "hobi = 'gatau'\n",
+        "tinggi_badan = 176\n",
+        "alamat = 'Bukittinggi'\n",
+        "\n",
+        "\n",
+        "loading_animation()\n",
+        "print('nama saya :', nama)\n",
+        "time.sleep(1)\n",
+        "\n",
+        "loading_animation()\n",
+        "print('hobi saya :', hobi)\n",
+        "time.sleep(1)\n",
+        "\n",
+        "loading_animation()\n",
+        "print('tinggi saya :', tinggi_badan)\n",
+        "time.sleep(1)\n",
+        "\n",
+        "loading_animation()\n",
+        "print('alamat saya :', alamat)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lOG_I9DIGsLF",
+        "outputId": "793d4baa-8026-4756-d340-ddb3251b8301"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nama saya : Geraldo Imanuel Dwisanto\n",
+            "hobi saya : gatau\n",
+            "tinggi saya : 176\n",
+            "alamat saya : Bukittinggi\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
